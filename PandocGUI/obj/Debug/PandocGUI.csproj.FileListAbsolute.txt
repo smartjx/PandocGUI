@@ -1,0 +1,13 @@
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\Pandoc\COPYRIGHT.txt
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\Pandoc\Pandoc User's Guide.html
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\Pandoc\pandoc-citeproc.exe
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\Pandoc\pandoc.exe
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\Pandoc\COPYING.rtf
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\PandocGUI.exe.config
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\PandocGUI.exe
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\bin\Debug\PandocGUI.pdb
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.PandocGUI.resources
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.Properties.Resources.resources
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.csproj.GenerateResource.Cache
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.exe
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.pdb
