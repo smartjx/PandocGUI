@@ -51,7 +51,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(3, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 17);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 46);
+            this.label2.Location = new System.Drawing.Point(3, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 1;
@@ -68,23 +68,23 @@
             // 
             // txtSource
             // 
-            this.txtSource.Location = new System.Drawing.Point(63, 9);
+            this.txtSource.Location = new System.Drawing.Point(63, 30);
             this.txtSource.Name = "txtSource";
             this.txtSource.Size = new System.Drawing.Size(267, 22);
             this.txtSource.TabIndex = 2;
             // 
             // txtOutput
             // 
-            this.txtOutput.Location = new System.Drawing.Point(63, 43);
+            this.txtOutput.Location = new System.Drawing.Point(63, 60);
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.Size = new System.Drawing.Size(267, 22);
             this.txtOutput.TabIndex = 3;
             // 
             // selectSource
             // 
-            this.selectSource.Location = new System.Drawing.Point(336, 4);
+            this.selectSource.Location = new System.Drawing.Point(336, 30);
             this.selectSource.Name = "selectSource";
-            this.selectSource.Size = new System.Drawing.Size(75, 32);
+            this.selectSource.Size = new System.Drawing.Size(75, 25);
             this.selectSource.TabIndex = 4;
             this.selectSource.Text = "选择";
             this.selectSource.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@
             // 
             // selectOutput
             // 
-            this.selectOutput.Location = new System.Drawing.Point(336, 39);
+            this.selectOutput.Location = new System.Drawing.Point(336, 58);
             this.selectOutput.Name = "selectOutput";
-            this.selectOutput.Size = new System.Drawing.Size(75, 31);
+            this.selectOutput.Size = new System.Drawing.Size(75, 24);
             this.selectOutput.TabIndex = 5;
             this.selectOutput.Text = "选择";
             this.selectOutput.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             "html",
             "pdf",
             "docx"});
-            this.cbFormat.Location = new System.Drawing.Point(63, 79);
+            this.cbFormat.Location = new System.Drawing.Point(63, 88);
             this.cbFormat.Name = "cbFormat";
             this.cbFormat.Size = new System.Drawing.Size(267, 24);
             this.cbFormat.TabIndex = 6;
@@ -117,7 +117,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 79);
+            this.label3.Location = new System.Drawing.Point(3, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 7;
@@ -149,7 +149,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 111);
+            this.label4.Location = new System.Drawing.Point(3, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 17);
             this.label4.TabIndex = 10;
@@ -160,11 +160,11 @@
             this.cbStyle.FormattingEnabled = true;
             this.cbStyle.Items.AddRange(new object[] {
             "-c Github.css"});
-            this.cbStyle.Location = new System.Drawing.Point(63, 111);
+            this.cbStyle.Location = new System.Drawing.Point(63, 118);
             this.cbStyle.Name = "cbStyle";
             this.cbStyle.Size = new System.Drawing.Size(267, 24);
             this.cbStyle.TabIndex = 11;
-            this.cbStyle.Text = "-c github.css";
+            this.cbStyle.Text = "-c Github.css";
             this.cbStyle.SelectedIndexChanged += new System.EventHandler(this.cbStyle_SelectedIndexChanged);
             // 
             // richTextBox2
