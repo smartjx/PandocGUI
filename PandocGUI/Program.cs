@@ -11,7 +11,7 @@ namespace PandocGUI
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]//we
+        [STAThread]//we//test github push
         static void Main()
         {
             Application.EnableVisualStyles();
