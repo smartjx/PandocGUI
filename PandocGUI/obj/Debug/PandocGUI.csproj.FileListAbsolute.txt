@@ -11,3 +11,4 @@ C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\
 C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.csproj.GenerateResource.Cache
 C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.exe
 C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.pdb
+C:\Users\xiang.ji\Documents\Visual Studio 2017\Projects\PandocGUI\PandocGUI\obj\Debug\PandocGUI.csprojResolveAssemblyReference.cache

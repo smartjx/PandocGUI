@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandModel.cs" />
     <Compile Include="PandocGUI.cs">
       <SubType>Form</SubType>
     </Compile>

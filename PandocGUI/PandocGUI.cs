@@ -16,27 +16,34 @@ namespace PandocGUI
     public partial class PandocGUI : Form
     {
      private static   StringBuilder output = new StringBuilder();
-        private static int lineCount = 0;
+     private static int lineCount = 0;
+ 
+        private static CommandModel cm = new CommandModel();
 
         public PandocGUI()
         {
             InitializeComponent();
+          
              txtOutput.Text = Properties.Settings.Default.OutputPath;
         }
 
         private async void convert_Click(object sender, EventArgs e)
         {
 
-            var onlyFileName = System.IO.Path.GetFileName(txtSource.Text);
-            var command = txtSource.Text + " -o " +  txtOutput.Text+"\\" + onlyFileName+ "." + cbFormat.SelectedItem;
-            //runPandoc(command);
-
-        await Task.Factory.StartNew(() => runPandoc(@command),
-                                TaskCreationOptions.LongRunning);
-
-            richTextBox1.Text = output.ToString();
-          //  System.Diagnostics.Process.Start("pandoc", command);
-        }
+            if (txtSource.Text.Length < 1)
+            {
+                MessageBox.Show("没有选择源文件，请选择后再转换");
+            }
+            else
+            {
+                updateCommandModel();
+                var commandtorun = richTextBox2.Text;
+                await Task.Factory.StartNew(() => runPandoc(commandtorun),
+                                    TaskCreationOptions.LongRunning);
+                richTextBox1.Text = output.ToString();
+                
+            }
+         }
 
         private void selectSource_Click(object sender, EventArgs e)
         {
@@ -44,14 +51,24 @@ namespace PandocGUI
             if (result == DialogResult.OK) // Test result.
             {
                 txtSource.Text = openFileDialog1.FileName;
-
-                
                 Properties.Settings.Default.SourceFile = openFileDialog1.FileName;
                 Properties.Settings.Default.Save();
+
+                updateCommandModel();
             }
-           
+
         }
-         
+
+        private void updateCommandModel()
+        {
+            cm.defaultCommand = " -o ";
+            cm.inputfile = "\"" + txtSource.Text + "\"";  
+            cm.outputfile = "\"" + txtOutput.Text + "\\" + openFileDialog1.SafeFileName+ "." + cbFormat.SelectedItem + "\""; 
+            cm.outputformat ="";
+            cm.outputStyle = " " + cbStyle.SelectedItem;
+             richTextBox2.Text = cm.inputfile + cm.defaultCommand + cm.outputfile + cm.outputformat + cm.outputStyle;
+        }
+
         private void selectOutput_Click(object sender, EventArgs e)
          {
             DialogResult result = folderBrowserDialog1.ShowDialog();
@@ -60,14 +77,16 @@ namespace PandocGUI
                 txtOutput.Text = folderBrowserDialog1.SelectedPath;
                 Properties.Settings.Default.OutputPath = folderBrowserDialog1.SelectedPath;
                 Properties.Settings.Default.Save();
-             }
+
+                updateCommandModel();
+            }
 
         }
 
         private string runPandoc(string command)
         {
-
-            //  var output = "";
+              output.Clear();
+              output.Append("转换完成");
             var pandocPath = new Uri(
          System.IO.Path.GetDirectoryName(
             System.Reflection.Assembly.GetExecutingAssembly().CodeBase)
@@ -83,7 +102,7 @@ namespace PandocGUI
                                 Arguments = command,
                                 CreateNoWindow = true
                          }
-        };
+            };
 
  
             process.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
@@ -117,7 +136,16 @@ namespace PandocGUI
            
 
         }
-    
-   
-}
+
+        private void cbFormat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            updateCommandModel();
+        }
+
+        private void cbStyle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            updateCommandModel();
+
+        }
+    }
 }
