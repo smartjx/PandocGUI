@@ -115,7 +115,11 @@
             this.cbFormat.Items.AddRange(new object[] {
             "html",
             "pdf",
-            "docx"});
+            "docx",
+            "txt",
+            "epub",
+            "json",
+            "md"});
             this.cbFormat.Location = new System.Drawing.Point(63, 88);
             this.cbFormat.Name = "cbFormat";
             this.cbFormat.Size = new System.Drawing.Size(267, 24);
