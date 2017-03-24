@@ -17,9 +17,8 @@ namespace PandocGUI
     {
      private static   StringBuilder output = new StringBuilder();
      private static int lineCount = 0;
- 
-        private static CommandModel cm = new CommandModel();
-
+     private static CommandModel cm = new CommandModel();
+        private static bool convertSuccess = false;
         public PandocGUI()
         {
             InitializeComponent();
@@ -29,6 +28,7 @@ namespace PandocGUI
 
         private async void convert_Click(object sender, EventArgs e)
         {
+            convertSuccess = true;
 
             if (txtSource.Text.Length < 1)
             {
@@ -36,10 +36,13 @@ namespace PandocGUI
             }
             else
             {
-                updateCommandModel();
+                richTextBox1.Text = "转换中...请耐心等待...";
+              //  updateCommandModel();
                 var commandtorun = richTextBox2.Text;
                 await Task.Factory.StartNew(() => runPandoc(commandtorun),
                                     TaskCreationOptions.LongRunning);
+
+                
                 richTextBox1.Text = output.ToString();
                 
             }
@@ -86,7 +89,7 @@ namespace PandocGUI
         private string runPandoc(string command)
         {
               output.Clear();
-              output.Append("转换完成");
+             output.Append("转换失败!");
             var pandocPath = new Uri(
          System.IO.Path.GetDirectoryName(
             System.Reflection.Assembly.GetExecutingAssembly().CodeBase)
@@ -117,9 +120,11 @@ namespace PandocGUI
 
             process.ErrorDataReceived += new DataReceivedEventHandler((sender, e) =>
             {
+               
                 // Prepend line numbers to each line of the output.
                 if (!String.IsNullOrEmpty(e.Data))
                 {
+                    convertSuccess = false;
                     lineCount++;
                     output.Append("\n[" + lineCount + "]: " + e.Data);
  
@@ -131,7 +136,14 @@ namespace PandocGUI
             process.BeginOutputReadLine();
             process.BeginErrorReadLine();
             process.WaitForExit();
-           return output.ToString();
+
+            if (convertSuccess == true)
+            {
+                output.Clear();
+                output.Append("转换完成");
+            }
+         
+            return output.ToString();
 
            
 
@@ -146,6 +158,16 @@ namespace PandocGUI
         {
             updateCommandModel();
 
+        }
+
+        private void btnOpenFolder_Click(object sender, EventArgs e)
+        {
+            Process.Start(@Properties.Settings.Default.OutputPath); 
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("请访问https://github.com/smartjx/PandocGUI 获取最新版本");
         }
     }
 }
