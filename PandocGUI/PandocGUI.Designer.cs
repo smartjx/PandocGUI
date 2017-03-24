@@ -53,6 +53,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pandocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -235,7 +236,8 @@
             // fileToolStripMenuItem1
             // 
             this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.pandocToolStripMenuItem});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
             this.fileToolStripMenuItem1.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem1.Text = "File";
@@ -246,6 +248,13 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // pandocToolStripMenuItem
+            // 
+            this.pandocToolStripMenuItem.Name = "pandocToolStripMenuItem";
+            this.pandocToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.pandocToolStripMenuItem.Text = "Pandoc";
+            this.pandocToolStripMenuItem.Click += new System.EventHandler(this.pandocToolStripMenuItem_Click);
             // 
             // PandocGUI
             // 
@@ -306,6 +315,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pandocToolStripMenuItem;
     }
 }
 

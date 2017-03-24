@@ -169,5 +169,11 @@ namespace PandocGUI
         {
             MessageBox.Show("请访问https://github.com/smartjx/PandocGUI 获取最新版本");
         }
+
+        private void pandocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("请访问http://pandoc.org/ 获取Pandoc最新版本");
+
+        }
     }
 }
