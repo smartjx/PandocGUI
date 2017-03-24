@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PandocGUI.exe" version="1.0.0.1" publicKeyToken="024c7795e1260029" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PandocGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PandocGUI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PandocGUI.exe" size="87528">
+      <assemblyIdentity name="PandocGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vQgwO9JdSOST+pcNG+hgdVeaJiaZrXwopHbG/Ov+VCM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Pandoc\COPYRIGHT.txt" size="4458">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wCcJfj5J7FGZtNK14C7iVzGIdtlXQeynXzlvjNPIAQg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pandoc\Pandoc User's Guide.html" size="184875">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nmHZBoIwUlxS+VgSPtf/lHCEIwHoOvUJiQIcpKMPXek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pandoc\pandoc.exe" size="45635099">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fLn8EGVqWNYHcoCoVp/KuHpEHwjuGzEIfTrk3ZHTSmg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Pandoc\pandoc-citeproc.exe" size="41731099">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jp3Cr8mw8o1gc+f/bdvC+dLNTZ696XNYqENzaU+NdDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PandocGUI.exe.config" size="1051">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CJidc9b88Zm+u6TgIba2yjvxFdyZVEPo9Dlhq8vOpl8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SCHMITZ-WUHAN\xiang.ji" issuerKeyHash="40dd33283b0fac9edb02b2d8fecc8d5cff3367d8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5juZ6nqlmKiVGHL19JB715v56CxkbDJ87RmM3l2k2AU=</DigestValue></Reference></SignedInfo><SignatureValue>AqHT6wLgXPrPeSoYbm9XL4p4VCklNo/eGfqG06B4ygUb8hoeZYh0fL5fTIojc83Jk9TNswA/NriMRs8lYzouOd8mVOaBcPlY2BeNHrXBYRbH/qAhBgeSjXcc1IWj0L4mQ6N5/R8XBQG8ufj9RqyZyvMZ5RbcapkFmr5Dig0GifI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sTfUN4z6qh0k1ozkUf+jxNEgbQzeaOs71PG436bpoa5Kp4D1M7WgTHxJ2I/R0qe59xzLUdI0K0ahG4PD0tYo3CIJsj9aaQw7stJSc4yPG2ChWjJl7YpwlcD8w11BGL8ADOKVHs2EdBauj/ZHcfxthecUceOTVsB014YX/ZKY5fc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="05d8a45dde8c19ed7c326c642ce8f99bd77b90f4f5721895a898a57aea993be6" Description="" Url=""><as:assemblyIdentity name="PandocGUI.exe" version="1.0.0.1" publicKeyToken="024c7795e1260029" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SCHMITZ-WUHAN\xiang.ji</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NTBAzhu1ukOM/zajq6JykAKYf2L+l4xfHk3lAxNInWs=</DigestValue></Reference></SignedInfo><SignatureValue>dlFJrdKqPFIOpTLyUtI1k5dhwWEF3MAUf9KGVG8Xp97n5Usgn3X6kPgaNiAXt4fNB8UOoGcN2XBQCv776DjzwTCZindnkFAVszIH8JIrXWLOaoDLufn3SwdD2vSaQNWSuw5KcIL9WfMtxuI1dCb/highxIXP/IYhfPS/oU90b6Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sTfUN4z6qh0k1ozkUf+jxNEgbQzeaOs71PG436bpoa5Kp4D1M7WgTHxJ2I/R0qe59xzLUdI0K0ahG4PD0tYo3CIJsj9aaQw7stJSc4yPG2ChWjJl7YpwlcD8w11BGL8ADOKVHs2EdBauj/ZHcfxthecUceOTVsB014YX/ZKY5fc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQNwScqFLFw7tOfUe6kq5TBTANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwAUwBDAEgATQBJAFQAWgAtAFcAVQBIAEEATgBcAHgAaQBhAG4AZwAuAGoAaTAeFw0xNzAzMjMwODI3MjNaFw0xODAzMjMxNDI3MjNaMDcxNTAzBgNVBAMeLABTAEMASABNAEkAVABaAC0AVwBVAEgAQQBOAFwAeABpAGEAbgBnAC4AagBpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxN9Q3jPqqHSTWjORR/6PE0SBtDN5o6zvU8bjfpumhrkqngPUztaBMfEnYj9HSp7n3HMtR0jQrRqEbg8PS1ijcIgmyP1ppDDuy0lJzjI8bYKFaMmXtinCVwPzDXUEYvwAM4pUezYR0Fq6P9kdx/G2F5xRx45NWwHTXhhf9kpjl9wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJIcpuar/9DJ1udxY/HhacgwXE+ZHVkw4otcpTMBdlfc4Oj5g5MjvAqDlprqyztGvyvpg4WbdkBDP66QCT6h6sfxsd3MnkCd8a9a73JDoApFQhHTBn6scDVwDI55RLEP4KKpHTV/SRqoCJv3fpy7jkWe8RoyjNx7uxGTGMEscSMP</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
